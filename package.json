@@ -1,0 +1,32 @@
+{
+  "name": "red-contrib-stromkonto",
+  "version": "1.0.0",
+  "description": "Stromkonto for Node Red (Green Energy Ledger)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/energychain/node-red-contrib-stromkonto.git"
+  },
+  "keywords": [
+    "stromkonto",
+    "node-red",
+    "contrib"
+  ],
+  "author": "STROMDO GmbH <kontakt@stromdao.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/energychain/node-red-contrib-stromkonto/issues"
+  },
+  "homepage": "https://github.com/energychain/node-red-contrib-stromkonto#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "node-red": {
+    "nodes": {
+      "Stromkonto": "Stromkonto.js"
+    }
+  }
+}

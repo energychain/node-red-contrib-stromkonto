@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Stromkonto',{
+        category: 'Corrently',
+        color: '#1e813f',
+        defaults: {
+            account: {value: null,required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "font-awesome/fa-line-chart",
+        label: function() {
+            return this.name||"Stromkonto";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="Stromkonto">
+    <div class="form-row">
+          <label for="node-input-account"><i class="icon-tag"></i> Stromkonto Account/Address</label>
+          <input type="text" id="node-input-account">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Stromkonto">
+    <p>Nutzung eines <a href='https://www.stromkonto.net/' target='_blank'>Stromkonto</a> innerhalb von Node RED.</p>
+    <h3>Konfiguration</h3>
+    <h4><code>Account</code></h4>
+    Stromkonto Account, welcher kostenlos unter www.stromkonto.net abgerufen werden kann.
+    <h3>Output</h3>
+    <h4><code>msg.payload</code></h4>
+    <p>Objekt mit den Daten des Stromkontos</p>
+    <p>Weitere Informationen zur <a href="https://corrently.io/#operation/stromkontoBalances">Rückgabe der REST API</a>.
+</script>
